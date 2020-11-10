@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="97a5c732-4ab7-4780-8b4f-424a64a72fb0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/front-end/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1k4jgdyXrkK8YlENs8x8H0IuKgK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="vuejs.nuxt.types-notification-shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front-end" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97a5c732-4ab7-4780-8b4f-424a64a72fb0" name="Default Changelist" comment="" />
+      <created>1604966872045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604966872045</updated>
+      <workItem from="1604966874551" duration="91000" />
+      <workItem from="1604967131180" duration="3541000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="478" y="220" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604967225508">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="478" y="220" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-335.-1057.3840.1057/0.23.1440.877@0.23.1440.877" timestamp="1604967225508" />
+    <state x="438" y="221" width="604" height="490" key="find.popup" timestamp="1604969673601">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="438" y="221" width="604" height="490" key="find.popup/-335.-1057.3840.1057/0.23.1440.877@0.23.1440.877" timestamp="1604969673601" />
+    <state x="405" y="224" width="670" height="676" key="search.everywhere.popup" timestamp="1604969427721">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="405" y="224" width="670" height="676" key="search.everywhere.popup/-335.-1057.3840.1057/0.23.1440.877@0.23.1440.877" timestamp="1604969427721" />
+  </component>
+</project>
