@@ -20,15 +20,11 @@
       id="nav-content">
       <ul class="list-reset lg:flex justify-end flex-1 items-center">
         <li class="mr-3">
-          <a class="inline-block py-2 px-4 text-white no-underline" href="#">Active</a>
+          <a class="inline-block py-2 px-4 text-white no-underline" href="#">Leagues</a>
         </li>
         <li class="mr-3">
           <a class="inline-block text-white no-underline hover:text-grey-lighter py-2 px-4"
-             href="#">link</a>
-        </li>
-        <li class="mr-3">
-          <a class="inline-block text-white no-underline hover:text-grey-lighter py-2 px-4"
-             href="#">link</a>
+             href="#">Find Leagues</a>
         </li>
       </ul>
     </div>

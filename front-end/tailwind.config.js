@@ -12,7 +12,8 @@ module.exports = {
       lightBlue: '#F3FCFF',
       hoverBlue: '#05AFF2',
       blue: '#0468BF',
-      white: '#fff'
+      white: '#fff',
+      lightGray: '#DFE3EA'
     },
     fontSize: {
       xxs: '0.625rem',
