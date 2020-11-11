@@ -24,12 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="97a5c732-4ab7-4780-8b4f-424a64a72fb0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/components/buttons/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/components/buttons/LeagueButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/components/modals/EditLeague.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/components/modals/EditLeague.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +71,8 @@
       <workItem from="1604966874551" duration="91000" />
       <workItem from="1604967131180" duration="7738000" />
       <workItem from="1605041447710" duration="18000" />
-      <workItem from="1605055952007" duration="6449000" />
+      <workItem from="1605055952007" duration="6950000" />
+      <workItem from="1605119931896" duration="1350000" />
     </task>
     <servers />
   </component>

@@ -1,14 +1,14 @@
 <template>
   <modal name="edit" height="auto" @before-close="closeModal" @before-open="loadLeague">
-    <div v-if="league">
+    <div v-if="!loading">
       <div class="w-full">
         <form
           class="bg-white rounded-lg px-12 py-10 border-borderLightGrey border"
           method="POST"
-          @submit.prevent="updateLeague()"
+          @submit.prevent="submitLeague()"
         >
           <div class="text-center text-base font-bold pb-10">
-            Edit League
+            {{ leagueId ? 'Edit' : 'Create' }} League
           </div>
 
           <TextInput v-model="league.name" name="name">
@@ -38,7 +38,12 @@ export default {
   components: {LeagueButton},
   data() {
     return {
-      league: null
+      league: {
+        name: null,
+        latitude: null,
+        longitude: null
+      },
+      loading: true,
     }
   },
   props: {
@@ -64,19 +69,45 @@ export default {
         console.log(err)
       })
     },
-    async loadLeague() {
-      this.$axios.get('api/leagues/' + this.leagueId)
+    async createLeague() {
+      this.$axios.post('/api/leagues/', this.leagueParams())
         .then((res) => {
-          this.league = res.data
+          this.$nuxt.$emit('leagueCreated', res.data)
         }).catch((err) => {
         console.log(err)
       })
+    },
+    async submitLeague() {
+      this.leagueId ? await this.updateLeague() : await this.createLeague()
+
+      this.loading = false
+    },
+    async loadLeague() {
+      if (this.leagueId) {
+        this.$axios.get('api/leagues/' + this.leagueId)
+          .then((res) => {
+            this.league = res.data
+          }).catch((err) => {
+          console.log(err)
+        })
+      } else {
+        this.league = this.resetLeague()
+      }
+
+      this.loading = false
     },
     leagueParams() {
       return {
         name: this.league.name,
         latitude: this.league.latitude,
         longitude: this.league.longitude
+      }
+    },
+    resetLeague() {
+      return {
+        name: null,
+        latitude: null,
+        longitude: null
       }
     }
   },

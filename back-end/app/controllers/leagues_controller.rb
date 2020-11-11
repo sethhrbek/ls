@@ -33,7 +33,7 @@ class LeaguesController < ApplicationController
   private
 
   def all_leagues
-    League.all
+    League.all.order(:name)
   end
 
   def find_league
