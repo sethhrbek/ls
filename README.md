@@ -8,6 +8,10 @@ You may need to give it permissions:
 `chmod u+x startup.sh`
 
 To view the application, visit:
+localhost:3000
+
+
+The rails server will be exposed on port 8080 (http://localhost:8080/)
 ``
 
 ## Manual Startup
