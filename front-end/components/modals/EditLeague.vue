@@ -1,18 +1,21 @@
 <template>
   <modal name="edit" height="auto" @before-close="closeModal" @before-open="loadLeague">
     <div v-if="!loading">
-      <div class="w-full">
+      <div class="w-full border-lightGray border relative">
         <form
-          class="bg-white rounded-lg px-12 py-10 border-borderLightGrey border"
+          class="bg-white rounded-lg px-12 py-10 "
           method="POST"
           @submit.prevent="submitLeague()"
         >
-          <div class="text-center text-base font-bold pb-10">
+          <div class="text-center text-base font-bold pb-6">
             {{ leagueId ? 'Edit' : 'Create' }} League
           </div>
 
           <TextInput v-model="league.name" name="name">
             Name
+          </TextInput>
+          <TextInput v-model="league.price" name="price" type="number">
+            Price
           </TextInput>
           <TextInput v-model="league.latitude" name="latitude">
             Latitude
@@ -21,7 +24,11 @@
             Longitude
           </TextInput>
 
-          <SubmitInput value="Submit" class="mt-8"/>
+          <div class="text-red absolute text-center mt-24 right-0 left-0 absolute" v-if="error">
+            Please enter all fields before submitting
+          </div>
+
+          <SubmitInput value="Submit" class="mt-8 pb-8"/>
         </form>
       </div>
     </div>
@@ -41,9 +48,11 @@ export default {
       league: {
         name: null,
         latitude: null,
-        longitude: null
+        longitude: null,
+        price: null
       },
       loading: true,
+      error: false,
     }
   },
   props: {
@@ -56,8 +65,14 @@ export default {
       default: null
     }
   },
+  mounted() {
+    window.addEventListener('keydown', (e) => {
+      this.error = false
+    });
+  },
   methods: {
     closeModal() {
+      this.error = false
       this.$nuxt.$emit('closeModal', false)
     },
     async updateLeague() {
@@ -78,9 +93,12 @@ export default {
       })
     },
     async submitLeague() {
-      this.leagueId ? await this.updateLeague() : await this.createLeague()
-
-      this.loading = false
+      if(this.leagueIsValid()) {
+        this.error = false
+        this.leagueId ? await this.updateLeague() : await this.createLeague()
+      } else {
+        this.error = true
+      }
     },
     async loadLeague() {
       if (this.leagueId) {
@@ -100,7 +118,8 @@ export default {
       return {
         name: this.league.name,
         latitude: this.league.latitude,
-        longitude: this.league.longitude
+        longitude: this.league.longitude,
+        price: this.league.price
       }
     },
     resetLeague() {
@@ -109,6 +128,9 @@ export default {
         latitude: null,
         longitude: null
       }
+    },
+    leagueIsValid() {
+      return !Object.values(this.league).some(l => (l === null || l === ""))
     }
   },
   watch: {

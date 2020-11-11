@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2020_11_10_012117) do
     t.string "name"
     t.float "latitude"
     t.float "longitude"
-    t.decimal "price"
+    t.integer "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -24,8 +24,15 @@
   <component name="ChangeListManager">
     <list default="true" id="97a5c732-4ab7-4780-8b4f-424a64a72fb0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/components/modals/EditLeague.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/components/modals/EditLeague.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/components/navigation/TopBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/components/navigation/TopBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/pages/finder.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/pages/finder.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +79,7 @@
       <workItem from="1604967131180" duration="7738000" />
       <workItem from="1605041447710" duration="18000" />
       <workItem from="1605055952007" duration="6950000" />
-      <workItem from="1605119931896" duration="1350000" />
+      <workItem from="1605119931896" duration="9433000" />
     </task>
     <servers />
   </component>
@@ -100,9 +107,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="438" y="221" width="604" height="490" key="find.popup/-335.-1057.3840.1057/0.23.1440.877@0.23.1440.877" timestamp="1604969673601" />
-    <state x="405" y="224" width="670" height="676" key="search.everywhere.popup" timestamp="1604969427721">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="745" y="-815" width="1787" height="815" key="search.everywhere.popup" timestamp="1605124432355">
+      <screen x="-335" y="-1057" width="3840" height="1057" />
     </state>
+    <state x="745" y="-815" width="1787" height="815" key="search.everywhere.popup/-335.-1057.3840.1057/0.23.1440.877@-335.-1057.3840.1057" timestamp="1605124432355" />
     <state x="405" y="224" width="670" height="676" key="search.everywhere.popup/-335.-1057.3840.1057/0.23.1440.877@0.23.1440.877" timestamp="1604969427721" />
   </component>
 </project>

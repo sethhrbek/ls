@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
+Requires Docker to run.
 
-Things you may want to cover:
+Run the following docker commands to start the rails server and nuxt frontend.
 
-* Ruby version
+```
+docker
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Rails runs on port 8080 (localhost:8000)
+Nuxt runs on port 3000 (localhost:3000)

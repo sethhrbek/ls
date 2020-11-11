@@ -14,7 +14,8 @@ module.exports = {
       blue: '#0468BF',
       white: '#fff',
       black: '#000',
-      lightGray: '#DFE3EA'
+      lightGray: '#DFE3EA',
+      red: 'red'
     },
     fontSize: {
       xxs: '0.625rem',
