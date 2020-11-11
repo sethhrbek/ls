@@ -15,8 +15,9 @@
           <td>{{ format_currency(league.price) }}</td>
           <td>{{ league.latitude }}</td>
           <td>{{ league.longitude }}</td>
-          <td><button>Edit</button></td>
+          <td><div class="button" @click="showEditLeagueModal(league.id)">Edit</div></td>
         </tr>
+        <edit-league :show-modal="showModal" :league-id="leagueId" />
       </table>
     </div>
   </div>
@@ -27,22 +28,41 @@ export default {
   data() {
     return {
       leagues: [],
-      loading: true
+      loading: true,
+      showModal: false,
+      leagueId: null
     }
   },
   methods: {
     format_currency(amount) {
       return '$' + (amount / 1).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+    },
+    showEditLeagueModal(id) {
+      this.leagueId = id
+      this.showModal = true
+    },
+    async loadLeagues() {
+      this.$axios.get('api/leagues')
+        .then((res) => {
+          this.leagues = res.data
+        }).catch((err) => {
+        console.log(err)
+      })
     }
   },
-  async mounted() {
-    this.$axios.get('api/leagues')
-      .then((res) => {
-        this.leagues = res.data
-      }).catch((err) => {
-      console.log(err)
+  created () {
+    this.$nuxt.$on('closeModal', () => {
+      this.showModal = false
     })
-    // this.leagues = leagues
+
+    this.$nuxt.$on('leagueUpdated', (league) => {
+      let index = this.leagues.findIndex(leag => leag.id === league.id)
+      this.leagues[index] = league
+      this.showModal = false
+    })
+  },
+  async mounted() {
+    this.loadLeagues()
   }
 }
 </script>
@@ -50,5 +70,11 @@ export default {
 <style scoped>
 th, td {
   @apply py-3 px-6
+}
+</style>
+
+<style>
+.button {
+  @apply inline-block bg-blue text-baseSm text-white text-center uppercase font-bold py-2 px-6 rounded cursor-pointer;
 }
 </style>

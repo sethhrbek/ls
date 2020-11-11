@@ -1,11 +1,22 @@
 class LeaguesController < ApplicationController
+  before_action :find_league, only: [:show, :update]
+
   def index
     render json: all_leagues
   end
 
+  def show
+    render json: @league
+  end
+
+  def update
+    @league.update!(league_params)
+    render json: @league
+  end
+
   def create
-    League.create(league_params)
-    render json: all_leagues
+    league = League.create(league_params)
+    render json: league
   end
 
   def leagues_in_budget
@@ -23,6 +34,10 @@ class LeaguesController < ApplicationController
 
   def all_leagues
     League.all
+  end
+
+  def find_league
+    @league = League.find(params[:id])
   end
 
   def league_params

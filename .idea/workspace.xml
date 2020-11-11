@@ -24,7 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="97a5c732-4ab7-4780-8b4f-424a64a72fb0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/components/navigation/TopBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/components/navigation/TopBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/components/buttons/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/components/buttons/LeagueButton.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/nuxt.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/pages/index.vue" afterDir="false" />
@@ -40,7 +40,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1k4jgdyXrkK8YlENs8x8H0IuKgK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,12 +50,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front-end/components/form" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
     <property name="vuejs.nuxt.types-notification-shown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front-end/components/form" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/front-end" />
       <recent name="$PROJECT_DIR$" />
@@ -68,7 +73,9 @@
       <option name="presentableId" value="Default" />
       <updated>1604966872045</updated>
       <workItem from="1604966874551" duration="91000" />
-      <workItem from="1604967131180" duration="7094000" />
+      <workItem from="1604967131180" duration="7738000" />
+      <workItem from="1605041447710" duration="18000" />
+      <workItem from="1605055952007" duration="6449000" />
     </task>
     <servers />
   </component>
@@ -85,6 +92,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="478" y="220" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604967225508">

@@ -13,6 +13,7 @@ module.exports = {
       hoverBlue: '#05AFF2',
       blue: '#0468BF',
       white: '#fff',
+      black: '#000',
       lightGray: '#DFE3EA'
     },
     fontSize: {
