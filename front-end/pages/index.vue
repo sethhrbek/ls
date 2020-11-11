@@ -42,6 +42,7 @@ import 'vue-loading-overlay/dist/vue-loading.css'
 
 export default {
   mixins: [currency],
+  components: { Loading },
   data() {
     return {
       leagues: [],
@@ -95,6 +96,7 @@ export default {
   },
   async mounted() {
     await this.loadLeagues()
+    this.loading = false
   }
 }
 </script>

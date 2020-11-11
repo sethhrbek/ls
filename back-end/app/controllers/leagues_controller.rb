@@ -31,8 +31,10 @@ class LeaguesController < ApplicationController
     accum_budget = 0
 
     # TODO: Use reduce with accumulator
+    # TODO: ActiveRecord sorting not working correctly (tried reorder), falling back to sort_by
     # TODO: If we have 2 leagues with same sponsorship price, prefer the closer one
-    @nearby_leagues.reorder('price ASC').find_each do |league|
+
+    @nearby_leagues.to_a.sort_by { |league| league.price }.each do |league|
       accum_budget += league.price
       if accum_budget <= budget
         nearby_leagues_in_budget.push(league)
@@ -47,7 +49,7 @@ class LeaguesController < ApplicationController
   private
 
   def all_leagues
-    League.all.reorder(:name)
+    League.all.order(:name)
   end
 
   def find_nearby_leagues

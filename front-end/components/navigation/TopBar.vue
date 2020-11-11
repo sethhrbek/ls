@@ -1,7 +1,7 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap bg-indigo p-6 fixed w-full z-10 pin-t">
     <div class="flex items-center flex-no-shrink text-white mr-6">
-      <span class="text-2xl pl-2"><img :src="logo" width="150" /></span>
+      <span class="text-2xl pl-2"><nuxt-link to="/"><img :src="logo" width="150" /></nuxt-link></span>
     </div>
 
     <div

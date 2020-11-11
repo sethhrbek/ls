@@ -1,10 +1,12 @@
 <template>
   <div
     class="bg-grey-light pt-32 max-w-3xl flex flex-col justify-center mx-auto font-sans leading-normal tracking-normal">
+    <loading :active="loading"/>
     <div class="flex justify-between items-center">
       <h1 class="text-xl py-10">LEAGUE FINDER</h1>
+      <div v-if="results" @click="resetForm()" class="button button-light">NEW SEARCH</div>
     </div>
-    <div class="w-full border-lightGray border relative">
+    <div v-if="!results" class="w-full border-lightGray border relative">
       <form
         class="bg-white rounded-lg px-12 py-10 "
         method="POST"
@@ -39,11 +41,20 @@
         <SubmitInput value="Submit" class="mt-8 pb-8"/>
       </form>
     </div>
-    <div class="w-full flex flex-col border-lightGray border relative">
-      <h1 class="text-xl">Nearby leagues within budget:</h1>
-      <div class="flex w-full justify-between" v-for="league in results">
-        <div class="font-bold">{{ league.name }}</div>
-        <div class="ml-8">{{ format_currency(league.price) }}</div>
+    <div v-if="results">
+      <div class="w-full flex flex-col border-lightGray border relative">
+        <h1 class="text-base p-4">Nearby leagues within radius of {{ finder.radius }} miles and budget of {{ format_currency(finder.budget) }}:</h1>
+        <div class="flex w-full p-4 border border-lightGray justify-between" v-for="league in results">
+          <div class="font-bold">{{ league.name }}</div>
+          <div class="ml-8">{{ format_currency(league.price) }}</div>
+        </div>
+        <div v-if="results.length" class="flex w-full p-4 border border-lightGray justify-between">
+          <div class="font-bold">Total</div>
+          <div class="ml-8">{{ format_currency(resultsTotal(results)) }}</div>
+        </div>
+        <div v-else class="flex w-full p-4 border border-lightGray justify-between">
+          There were no leagues that matched your search
+        </div>
       </div>
     </div>
 
@@ -52,9 +63,12 @@
 
 <script>
 import currency from '~/mixins/currency.js'
+import Loading from 'vue-loading-overlay'
+import 'vue-loading-overlay/dist/vue-loading.css'
 
 export default {
   mixins: [currency],
+  components: { Loading },
   data() {
     return {
       finder: {
@@ -64,21 +78,33 @@ export default {
         longitude: null
       },
       results: null,
-      error: null
+      error: null,
+      loading: false,
+      showResults: false
     }
   },
   methods: {
     submitSearch() {
       if (this.finderIsValid()) {
+        this.loading = true
         this.$axios.post('/api/league-finder', this.finderParams())
           .then((res) => {
             this.results = res.data
           }).catch((err) => {
           console.log(err)
         })
+        this.loading = false
       } else {
         this.error = true
       }
+    },
+    resultsTotal(leagues) {
+      if (leagues.length) {
+        return leagues.map(league => league.price).reduce((prev, next) => prev + next);
+      }
+    },
+    resetForm() {
+      this.results = null
     },
     finderIsValid() {
       return !Object.values(this.finder).some(l => (l === null || l === ""))
