@@ -1,13 +1,13 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap bg-indigo p-6 fixed w-full z-10 pin-t">
-    <div class="flex items-center flex-no-shrink text-white mr-6">
+    <div class="flex items-center text-white mr-6">
       <span class="text-2xl pl-2"><nuxt-link to="/"><img :src="logo" width="150" /></nuxt-link></span>
     </div>
 
     <div
-      class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block pt-6 lg:pt-0"
+      class="flex items-center w-auto pt-0"
       id="nav-content">
-      <ul class="list-reset lg:flex justify-end flex-1 items-center">
+      <ul class="list-reset flex justify-end flex-1 items-center">
         <li class="mr-3">
           <nuxt-link class="inline-block py-2 px-4 text-white no-underline" to="/">Leagues</nuxt-link>
         </li>
