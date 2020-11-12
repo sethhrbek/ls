@@ -1,5 +1,5 @@
 docker volume create --name=pgdata
-cd /front-end
+cd front-end
 yarn
 cd ..
 docker-compose build
