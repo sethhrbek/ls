@@ -24,8 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="97a5c732-4ab7-4780-8b4f-424a64a72fb0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/pages/finder.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/pages/finder.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/front-end/components/form" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
     <property name="vuejs.nuxt.types-notification-shown" value="true" />
@@ -73,6 +73,7 @@
       <workItem from="1605041447710" duration="18000" />
       <workItem from="1605055952007" duration="6950000" />
       <workItem from="1605119931896" duration="11936000" />
+      <workItem from="1605189712406" duration="483000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-grey-light pt-32 max-w-3xl flex flex-col justify-center mx-auto font-sans leading-normal tracking-normal">
+    class="bg-grey-light px-6 pt-32 max-w-3xl flex flex-col justify-center mx-auto font-sans leading-normal tracking-normal">
     <loading :active="loading"/>
     <div class="flex justify-between items-center">
       <h1 class="text-xl py-10">LEAGUE FINDER</h1>

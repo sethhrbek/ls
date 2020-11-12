@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-grey-light pt-32 max-w-3xl flex flex-col justify-center mx-auto font-sans leading-normal tracking-normal">
+    class="bg-grey-light pt-32 px-6 max-w-3xl flex flex-col justify-center mx-auto font-sans leading-normal tracking-normal">
     <loading :active="loading" />
     <div class="flex justify-between items-center">
       <h1 class="text-xl py-10">LEAGUES</h1>
@@ -11,16 +11,16 @@
         <thead class="text-left">
         <th>Name</th>
         <th>Sponsorship Price</th>
-        <th>Lat</th>
-        <th>Long</th>
+        <th class="hidden md:table-cell">Lat</th>
+        <th class="hidden md:table-cell">Long</th>
         <th>Actions</th>
         </thead>
         <tbody is="transition-group" name="fade">
           <tr class="p-8 border border-lightGray" v-for="league in leagues" :key="league.id">
             <td>{{ league.name }}</td>
             <td>{{ format_currency(league.price) }}</td>
-            <td>{{ league.latitude }}</td>
-            <td>{{ league.longitude }}</td>
+            <td class="hidden md:table-cell">{{ league.latitude }}</td>
+            <td class="hidden md:table-cell">{{ league.longitude }}</td>
             <td>
               <div class="flex">
                 <div class="button" @click="showEditLeagueModal(league.id)">Edit</div>
