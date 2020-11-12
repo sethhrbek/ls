@@ -17,7 +17,11 @@ The rails server will be exposed on port 8080 (http://localhost:8080/)
 ## Manual Startup
 ```
 docker volume create --name=pgdata
+cd front-end
+yarn
+cd ..
 docker-compose build
 docker-compose up -d
-docker-compose run rails rake db:create db:migrate db:seed
+docker-compose run rails rake db:drop db:create db:migrate db:seed
+docker-compose up -d
 ```

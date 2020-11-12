@@ -5,3 +5,4 @@ cd ..
 docker-compose build
 docker-compose up -d
 docker-compose run rails rake db:drop db:create db:migrate db:seed
+docker-compose up -d
